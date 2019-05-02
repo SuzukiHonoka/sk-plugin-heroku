@@ -16,6 +16,7 @@ date -R
 
 mkdir /var/tmp/nginx
 mkdir /wwwroot
+SYS_Bit="$(getconf LONG_BIT)"
 
 CONF1=$(cat /home/Software/1.conf)
 CONF2=$(cat /home/Software/2.conf)
