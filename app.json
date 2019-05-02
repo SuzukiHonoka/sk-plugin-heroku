@@ -1,0 +1,22 @@
+{
+  "name": "简易部署 S&Kodexplore",
+  "description": "Deploy S&Kodexplore.",
+  "keywords": ["kod"],
+  "env": {
+    "S_Method": {
+        "description": "[S] 输入影梭加密方式，默认 aes-256-gcm",
+        "value": "aes-256-gcm"
+    },
+    "S_Path": {
+       "description": "[S] WS Path路径，默认/black-box",
+       "value": "/black-box"
+    },
+    "S_PW": {
+        "description": "[S] 输入影梭密码，默认 herokushadow",
+        "value": "herokushadow"
+    }
+  },
+  "website": "https://www.baidu.com",
+  "repository": "https://www.baidu.com",
+  "stack": "container"
+ }
