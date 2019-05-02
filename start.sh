@@ -12,21 +12,7 @@ if [[ -z "${S_PW}" ]]; then
   S_PW="herokushadow"
 fi
 
-SS_GIT_PATH="https://github.com/shadowsocks/shadowsocks-libev"
-
 date -R
-
-cd /tmp
-git clone ${SS_GIT_PATH}
-cd ${SS_GIT_PATH##*/}
-git submodule update --init --recursive
-./autogen.sh 
-./configure --prefix=/usr && make
-make install
-apk del TMP
-rm -rf /tmp/*
-rm -rf /var/cache/apk/*
-cd /root
 
 mkdir /var/tmp/nginx
 mkdir /wwwroot
