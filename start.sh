@@ -44,7 +44,7 @@ cat <<-EOF > /home/Software/ss.json
     "server_port":8080,
     "local_port":1080,
     "password":"${S_PW}",
-    "Method":"${S_Method}",
+    "method":"${S_Method}",
     "mode":"tcp_only",
     "timeout":300,
     "plugin":"/home/Software/v2ray-plugin_linux",
