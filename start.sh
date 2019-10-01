@@ -39,6 +39,7 @@ tar xvf /tmp/demo.tgz -C /wwwroot
 tar xvf /tmp/v2ray-plugin.tar.gz -C /home/Software
 chmod +x -R /home/Software/
 chmod -R 775 /wwwroot
+rm -r /wwwroot/kodexplorer
 
 cat <<-EOF > /home/Software/ss.json
 {
